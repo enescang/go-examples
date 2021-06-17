@@ -20,6 +20,6 @@ func main() {
 	if err != nil {
 		log.Fatal("Failed to create file")
 	}
-
+	defer file.Close()
 	fmt.Println("File created:", file.Name())
 }

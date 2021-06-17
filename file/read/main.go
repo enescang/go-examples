@@ -13,6 +13,7 @@ func main() {
 	if err != nil {
 		log.Fatal("Error: ", err)
 	}
+	defer file.Close()
 
 	data, err := io.ReadAll(file)
 	if err != nil {
