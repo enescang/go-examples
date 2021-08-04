@@ -25,7 +25,6 @@ func DatabaseConnection() string {
 		fmt.Println("Db Connection Started")
 		dbInstance = "connect_your_database"
 		fmt.Println("Db Connected")
-		panic("asda")
 	})
 	fmt.Println("Other Stuff")
 	return dbInstance
